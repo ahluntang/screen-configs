@@ -1,0 +1,18 @@
+deflog on
+logfile $HOME/Library/Logs/Screen/screen-%t-%Y-%m-%d.log
+logfile flush 1
+logtstamp on
+logtstamp string "\012-- time-stamp -- %Y-%m-%d %0c:%s --\012"
+logtstamp after 5
+
+startup_message off
+activity "%c activity -> %n%f %t"
+caption always "%0=%{+b rk} %{g}| %0L=%{g}%>%-Lw%{= yr}%n%f* %t%{-}%+Lw%L>%?(%u)%? %{g}|%>%=%{g} %=%C%A %Y.%m.%d %{bk}%100="
+hardstatus on
+hardstatus alwayslastline '%0=%{r} %{r}Logging output to ~/Library/Logs/Screen/screen-%t-%Y-%m-%d.log %=%{r}Load: %l%100='
+
+term screen-256color
+defutf8 on
+altscreen on
+autodetach on
+escape ^@^@ # ctrl space as escape command
