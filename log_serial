@@ -11,7 +11,8 @@ caption always "%0=%{+b rk} %{g}| %0L=%{g}%>%-Lw%{= yr}%n%f* %t%{-}%+Lw%L>%?(%u)
 hardstatus on
 hardstatus alwayslastline '%0=%{r} %{r}Logging output to ~/Library/Logs/Screen/screen-%t-%Y-%m-%d.log %=%{r}Load: %l%100='
 
-term screen-256color
+term xterm-256color
+termcapinfo xterm* ti@:te@
 defutf8 on
 altscreen on
 autodetach on

@@ -7,6 +7,7 @@ hardstatus on
 hardstatus alwayslastline "%0=%{r}| %{r}Ah-Lun Tang %{r}| |%=%{r}Load: %l%100="
 vbell off
 term screen-256color
+termcapinfo xterm* ti@:te@
 defutf8 on
 altscreen on
 autodetach on
